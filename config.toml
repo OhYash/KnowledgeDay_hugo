@@ -1,0 +1,4 @@
+baseURL = "http://knowledgeday.imfast.io/"
+languageCode = "en-us"
+title = "Knowledge Day"
+theme = "ananke"
