@@ -21,9 +21,6 @@
 			font-weight: bold;
         }
         
-		.orange-text{
-        	color: #FC6600
-        }
         .first{
         	font-size: 1.7vw;
         }
@@ -35,18 +32,19 @@
         }
         .fourth{
         	color: rgb(133, 127, 127);
-				position: absolute;
-					bottom: 0px;
+		position: absolute;
+		bottom: 0px;
         	font-weight: bold;  
         }
-		.hero-image {
-			position: fixed;
-			right: 0px;
-			bottom: 0px;
-			margin-left:20px;
-			height:100%;
-			width:auto;
-		}
+	.hero-image {
+		position: fixed;
+		right: 0px;
+		bottom: 0px;
+		margin-left:20px;
+		height:100%;
+		width:auto;
+		max-width:60%;
+	}
         input[type=text] {
         	/*width: 25%;*/
         	padding: 0.7vw;
@@ -89,56 +87,56 @@
         }
         
        	@media only screen and (max-width: 720px) {
-			body {
-				background-color: #eeeeee;
-					color: #222222;
+		body {
+			background-color: #eeeeee;
+				color: #222222;
+		}
+		h1 {
+			font-size: 35px;
+			margin-top: 5% !important;
+		}
+
+		p {
+			font-size: 20px;   
+				margin-right: 10%;
+		}
+
+		.first{
+			font-size: 25px;
+		}
+		img[alt="hero"] {
+			display: none;
 			}
-        		h1 {
-        			font-size: 35px;
-        			margin-top: 5% !important;
-        		}
-        
-        		p {
-        			font-size: 20px;   
-					margin-right: 10%;
-        		}
-        
-        		.first{
-        			font-size: 25px;
-        		}
-        		img[alt="hero"] {
-        			display: none;
-				}
-				input[type=text] {
-					margin-top: 10px;
-        			font-size: large;
-					padding: 15px;
-        			width: 80vw;
-        		}
-        		input[type=submit] {
-					margin-top: 10px;
-        			font-size: large;
-					padding: 15px;
-        			width: 80vw;
-        		}
-        		
-        		.fourth {
-					position: absolute;
-        			bottom: 0;
-        		}
-        	}
-        
-        	@media only screen and (min-width: 1024px) {
-        		body {
-        			/*	background-image: linear-gradient(42deg, #dfd9df, #5a6a6a);*/
-        		}
-        		input[type=submit] {
-        			width: 15vw;
-        		}
-        		input[type=text] {
-        			width: 30vw;
-        		}
-        	}
+			input[type=text] {
+				margin-top: 10px;
+			font-size: large;
+				padding: 15px;
+			width: 80vw;
+		}
+		input[type=submit] {
+				margin-top: 10px;
+			font-size: large;
+				padding: 15px;
+			width: 80vw;
+		}
+
+		.fourth {
+				position: absolute;
+			bottom: 0;
+		}
+	}
+
+	@media only screen and (min-width: 1024px) {
+		body {
+			/*	background-image: linear-gradient(42deg, #dfd9df, #5a6a6a);*/
+		}
+		input[type=submit] {
+			width: 15vw;
+		}
+		input[type=text] {
+			width: 30vw;
+		}
+	}
         
 		</style>
 
