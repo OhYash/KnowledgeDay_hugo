@@ -1,149 +1,158 @@
 <html>
 	<head>
-<style>
-/*@media only screen and (min-width: 20px) {
-  [class*="col-"] {
-	  width: 100%;
-  }
-  .first{
-	  margin-top: 10px;
-  }
-}*/
-body {
-		background-image: linear-gradient(42deg, #fdfcfb, #e2d1c3);
-		margin-left: 10vw;
-		font-family: Arial, Helvetica, sans-serif;
-}
-a:link {
-	text-decoration: none;
-	color: inherit;
-}
-a:visited {
-	text-decoration: none;
-	color: inherit;
-}
-a:hover {
-	text-decoration: none;
-	color: inherit;
-}
-a:active {
-	text-decoration: none;
-	color: inherit;
-}
-.orange-text{
-	color: #FC6600
-}
-.first{
-	font-size: 1.5vw;
-}
-.second{
-	color: black;
-}
-.third{
-	color: black;
-}
-.fourth{
-	color: rgb(133, 127, 127);
-	
-	font-weight: bold;  
-}
-input[type=text] {
-	/*width: 25%;*/
-	padding: 1vw;
-	margin: 0.5vw 0;
-	display: inline-block;
-	border: none;
-	border: 0.35vw solid #FC6600;
-	border-radius: 1vw;
-	box-sizing: border-box;
-	font-size:2vw;
-}
-input[type=submit] {
-	/*width: 150px;*/
-	background-color: #FC6600;
-	color: white;
-	padding: 1vw;
-	margin: 0.5vw 0;
-	font-size:2vw;
-	/*padding: 14px 20px;*/
-	/*margin-left: -10px;*/	
-	border: 0.35vw solid #FC6600;
-	border-radius: 1vw;
-	/*border-top-right-radius: 10px;*/
-	/*border-bottom-right-radius: 10px;*/
-	cursor: pointer;
-	font-weight: bold;
-}
-input:focus {
-    outline:none !important;
-}
-h1 {
-		background-color: #FC6600;
-		font-size: 3.5vw;
-		padding: 1%;
-		margin-top: 5% !important;
-}
-
-p {
-		font-size: 1.5vw;
-}
-
-@media only screen and (max-width: 420px) {
-        
-    h1 {
-        font-size: 35px;
-            margin-top: 5% !important;
-    }
-
-    p {
-		font-size: 20px;   
-    }
-        
-    .first{
-        font-size: 25px;
-    }
-    img[alt="hero"] {
-        display: none;
-    }
-	input[type=submit] {
-        font-size: large;
-		width: 80vw;
-	}
-	input[type=text] {
-        font-size: large;
-		width: 80vw;
-	}
-    .fourth {
-        position: fixed;
-        bottom: 0;
-    }
-}
-
-@media only screen and (min-width: 1024px) {
-body {
-		background-image: linear-gradient(42deg, #dfd9df, #5a6a6a);
+		<style>
+        /*@media only screen and (min-width: 20px) {
+        [class*="col-"] {
+      	  width: 100%;
         }
-	input[type=submit] {
-		width: 15vw;
-	}
-	input[type=text] {
-		width: 30vw;
-	}
-}
+        .first{
+      	  margin-top: 10px;
+        }
+        }*/
+        body {
+        	/*	background-image: linear-gradient(42deg, #fdfcfb, #e2d1c3);*/
+        	background-color: #eeeeee;
+        	margin-left: 10vw;
+        	font-family: Arial, Helvetica, sans-serif;
+        }
+        a {
+        	text-decoration: none;
+        	color: #FC6600;
+			font-weight: bold;
+        }
+        
+		.orange-text{
+        	color: #FC6600
+        }
+        .first{
+        	font-size: 1.7vw;
+        }
+        .second{
+        	color: black;
+        }
+        .third{
+        	color: black;
+        }
+        .fourth{
+        	color: rgb(133, 127, 127);
+				position: absolute;
+					bottom: 0px;
+        	font-weight: bold;  
+        }
+		.hero-image {
+			position: fixed;
+			right: 0px;
+			bottom: 0px;
+			margin-left:20px;
+			height:100%;
+			width:auto;
+		}
+        input[type=text] {
+        	/*width: 25%;*/
+        	padding: 0.7vw;
+        	margin: 0.3vw 0;
+        	display: inline-block;
+        	border: none;
+        	border: 0.2vw solid #FC6600;
+        	/*border-radius: 1vw;*/
+        	box-sizing: border-box;
+        	font-size:1.5vw;
+        }
+        input[type=submit] {
+        	/*width: 150px;*/
+        	background-color: #FC6600;
+        	color: white;
+        	padding: 0.7vw;
+        	margin: 0.3vw 0;
+        	font-size:1.5vw;
+        	/*padding: 14px 20px;*/
+        	/*margin-left: -10px;*/	
+        	border: 0.3vw solid #FC6600;
+        	/*border-radius: 1vw;*/
+        	/*border-top-right-radius: 10px;*/
+        	/*border-bottom-right-radius: 10px;*/
+        	cursor: pointer;
+        	font-weight: bold;
+        }
+        input:focus {
+        	outline:none !important;
+        }
+        h1 {
+        	background-color: #FC6600;
+        	font-size: 3.5vw;
+        	padding: 1%;
+        	margin-top: 5% !important;
+        }
+        
+        p {
+        	font-size: 1.2vw;
+        }
+        
+       	@media only screen and (max-width: 720px) {
+			body {
+				background-color: #eeeeee;
+					color: #222222;
+			}
+        		h1 {
+        			font-size: 35px;
+        			margin-top: 5% !important;
+        		}
+        
+        		p {
+        			font-size: 20px;   
+					margin-right: 10%;
+        		}
+        
+        		.first{
+        			font-size: 25px;
+        		}
+        		img[alt="hero"] {
+        			display: none;
+				}
+				input[type=text] {
+					margin-top: 10px;
+        			font-size: large;
+					padding: 15px;
+        			width: 80vw;
+        		}
+        		input[type=submit] {
+					margin-top: 10px;
+        			font-size: large;
+					padding: 15px;
+        			width: 80vw;
+        		}
+        		
+        		.fourth {
+					position: absolute;
+        			bottom: 0;
+        		}
+        	}
+        
+        	@media only screen and (min-width: 1024px) {
+        		body {
+        			/*	background-image: linear-gradient(42deg, #dfd9df, #5a6a6a);*/
+        		}
+        		input[type=submit] {
+        			width: 15vw;
+        		}
+        		input[type=text] {
+        			width: 30vw;
+        		}
+        	}
+        
+		</style>
 
-</style>
-
-<meta http-equiv="Content-Type" content="text/html; charset=utf8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Knowledge•Day</title>
-</head>
-<body>
-	<!--img src="kd_logo_transparent.png"-->
-	<h1><span style="color: white">Knowledge</span>•<span style="color: white">Day</span></h1>
-	<img src="kd-background_essentials_3.png" style="position: fixed;right: 0px;bottom: 0px;margin-left:20px;height:100%;width:auto;" alt="hero" />
-	<!-- <div cass="content"> -->
+		<meta http-equiv="Content-Type" content="text/html; charset=utf8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Knowledge•Day</title>
+	</head>
+	<body>
+		<!--img src="kd_logo_transparent.png"-->
+		<h1><span style="color: white">Knowledge</span>•<span style="color: white">Day</span></h1>
+		<img src="kd-background_essentials_3.png" class="hero-image" alt="hero" />
+		<!-- <div cass="content"> -->
 		<p class="first"><strong>Get Knowledge delivered home. 🏠</strong></p>
-		<p>Enter your email so we know where to send.</p>
+		<p>Something new <strong>every week</strong> - pure content, no links. Handwritten by <a href="https://twitter.com/Ohy4sh">Yash</a>.</p>
 		<form action="https://formspree.io/xayponar" method="POST">
 			<input type="text" id="text" name="fname" placeholder="First name (optional)">
 			<br/>
@@ -152,8 +161,8 @@ body {
 			<input type="submit" value="Get Smarter">
 		</form>
 		<br/>
-		<p>Unsubscribe at any time. Seriously, no hard feelings.</p>
-		<p class="fourth"><a href="https://ohyash.github.io/KnowledgeDay/"> > Read recent top articles</a></p>
-	<!-- </div> -->
-</body>
+		<!--p>Unsubscribe at any time. Seriously, no hard feelings.</p-->
+		<p class="fourth"><a href="https://ohyash.github.io/KnowledgeDay/?utm_source=KD-signup2&utm_medium=explore&utm_campaign=signup"> > Read recent top articles</a></p>
+		<!-- </div> -->
+	</body>
 </html>
